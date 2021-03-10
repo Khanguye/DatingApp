@@ -34,6 +34,9 @@ namespace API.Entities
 
         public ICollection<Photo> Photos{get;set;}
 
+        public ICollection<UserLike> LikedByUsers{get;set;}
+
+        public ICollection<UserLike> LikedUsers{get;set;}
          //Do not put calculated function in entity
          //Auto mapping projection won't work.
          

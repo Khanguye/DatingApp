@@ -11,7 +11,6 @@ namespace API.Services
     public class PhotoService : IPhotoService
     {
         private readonly Cloudinary _cloudinary;
-        private readonly IOptions<CloudinarySettings> _config;
         public PhotoService(IOptions<CloudinarySettings> config)
         {
             var acc = new Account(
