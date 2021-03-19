@@ -37,6 +37,8 @@ namespace API.Entities
         public ICollection<UserLike> LikedByUsers{get;set;}
 
         public ICollection<UserLike> LikedUsers{get;set;}
+        public ICollection<Message> MessagesSent{get;set;}
+        public ICollection<Message> MessagesReceived{get;set;}
          //Do not put calculated function in entity
          //Auto mapping projection won't work.
          
